@@ -1,52 +1,80 @@
-# PLACEHOLDER: every value below is lorem ipsum, to be replaced with real data.
-# Drives the theme's resume layout. Any top-level key can be removed and its
-# section disappears. Add `pdf: "resume.pdf"` (static/resume.pdf) for a
-# Download button.
+# Drives the theme's resume layout. Source: Daan_Schutte_CV_public.pdf.
+# Any top-level key can be removed and its section disappears.
 
 name: "Daan Schutte"
-role: "Lorem ipsum"
+role: "BSc in Computing"
+pdf: "resume.pdf"   # static/resume.pdf
 summary: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua.
-location: "Lorem ipsum"
+  Former military pilot and flight instructor (20 years, 2,800+ flight hours)
+  with professional software development experience moving into cybersecurity.
+  TryHackMe SAL1 certified, with hands-on alert triage and log analysis in
+  Microsoft Sentinel and Splunk, planning on doing Microsoft SC-200 next. SOC
+  analysis is my preferred entry point to gain real-world experience, and I am
+  open to incident response and security risk roles with a keen interest in
+  Cyber Threat Intelligence. As an Aviation Safety Officer I ran occurrence
+  reporting and analysis and monthly safety training.
+location: "The Hague, The Netherlands"
 
 contact:
-  - label: "Lorem"
-    value: "lorem ipsum"
-
-highlights:
-  - figure: "0"
-    label: "Lorem ipsum"
-  - figure: "0"
-    label: "Dolor sit"
-  - figure: "0"
-    label: "Amet"
-
-achievements:
-  - title: "Lorem ipsum"
-    body: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim
-      veniam, quis nostrud exercitation.
+  - label: "Citizenship"
+    value: "Dutch"
+  - label: "Email"
+    value: "24-tycoon.ping@icloud.com"
+    url: "mailto:24-tycoon.ping@icloud.com"
+  - label: "GitHub"
+    value: "github.com/daanschutte"
+    url: "https://github.com/daanschutte"
+  - label: "LinkedIn"
+    value: "linkedin.com/in/daanschutte"
+    url: "https://linkedin.com/in/daanschutte"
 
 experience:
-  - role: "Lorem ipsum"
-    company: "Dolor sit"
-    from: "0000"
-    to: "Present"
-    current: true
+  - role: "Qualified Flight Instructor"
+    company: "DCI · Qatar"
+    from: "Jan 2022"
+    to: "Jun 2026"
     bullets:
-      - "Lorem ipsum dolor sit amet."
-      - "Consectetur adipiscing elit."
-    stack: "Lorem · Ipsum · Dolor"
+      - "QFI on PC-21, ab-initio military pilot instruction: structured briefings, debriefs and written performance assessments."
+      - "FlightPro system administrator across 4 squadrons: user provisioning and security-group access management, daily reliability, SQL queries for statistics and reporting."
+      - "Founding member of R&D department; co-developed a VR part-task trainer in Unity for pilot training."
+  - role: "WSO Instructor Pilot"
+    company: "DCI · Qatar"
+    from: "Dec 2019"
+    to: "Dec 2021"
+    bullets:
+      - "Ab-initio WSO instruction (side-by-side) on Super Mushshak and Flight Navigation Procedures Trainer."
+      - "Maintained complex Excel grade sheets (VBA) and tracking tools."
+  - role: "Backend Software Engineer"
+    company: "Picnic · Netherlands"
+    from: "Jul 2018"
+    to: "Nov 2019"
+    bullets:
+      - "Spring Boot REST microservices: Java, Postgres, MongoDB, Docker, Kubernetes."
+  - role: "Military Pilot and Instructor"
+    company: "SAAF · South Africa"
+    from: "Sep 2004"
+    to: "Jun 2018"
+    bullets:
+      - "SAAF fixed- and rotary-wing pilot; fixed-wing instructor."
+      - "Aviation Safety Officer (two postings): occurrence reporting, data collection and analysis; ran monthly safety awareness training."
 
 skills:
-  - group: "Lorem"
-    items: "Ipsum, dolor, sit, amet"
+  - group: "Security (hands-on labs)"
+    items: "Alert triage and log analysis, Microsoft Sentinel, Splunk, Wireshark and network traffic analysis, MITRE ATT&CK"
+  - group: "Scripting & development"
+    items: "Java/Spring Boot, C#/.NET, SQL, Python, Rust, Swift/SwiftUI, Git, Docker"
+  - group: "Systems"
+    items: "Linux, Windows, macOS, networking fundamentals"
+  - group: "AI"
+    items: "Agentic AI tooling using Claude Code"
 
 education:
-  - school: "Lorem ipsum"
-    award: "Dolor sit"
-    years: "0000 — 0000"
+  - school: "University of South Africa"
+    award: "Bachelor of Science in Computing"
+  - school: "University of Stellenbosch"
+    award: "Bachelor of Military Technology Certificate"
 
 languages:
-  - "Lorem"
+  - "English (native)"
+  - "Afrikaans (native)"
+  - "Dutch (B1, reading B2; preparing for B2)"
