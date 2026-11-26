@@ -1,0 +1,52 @@
+# PLACEHOLDER: every value below is lorem ipsum, to be replaced with real data.
+# Drives the theme's resume layout. Any top-level key can be removed and its
+# section disappears. Add `pdf: "resume.pdf"` (static/resume.pdf) for a
+# Download button.
+
+name: "Daan Schutte"
+role: "Lorem ipsum"
+summary: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.
+location: "Lorem ipsum"
+
+contact:
+  - label: "Lorem"
+    value: "lorem ipsum"
+
+highlights:
+  - figure: "0"
+    label: "Lorem ipsum"
+  - figure: "0"
+    label: "Dolor sit"
+  - figure: "0"
+    label: "Amet"
+
+achievements:
+  - title: "Lorem ipsum"
+    body: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim
+      veniam, quis nostrud exercitation.
+
+experience:
+  - role: "Lorem ipsum"
+    company: "Dolor sit"
+    from: "0000"
+    to: "Present"
+    current: true
+    bullets:
+      - "Lorem ipsum dolor sit amet."
+      - "Consectetur adipiscing elit."
+    stack: "Lorem · Ipsum · Dolor"
+
+skills:
+  - group: "Lorem"
+    items: "Ipsum, dolor, sit, amet"
+
+education:
+  - school: "Lorem ipsum"
+    award: "Dolor sit"
+    years: "0000 — 0000"
+
+languages:
+  - "Lorem"

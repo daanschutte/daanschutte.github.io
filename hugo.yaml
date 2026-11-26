@@ -7,6 +7,8 @@ params:
   defaultTheme: auto   # follows the reader's light/dark setting
   mainSections: ["posts"]
   DateFormat: "2 January 2006"
+  brand: "Home"   # nav wordmark (house icon added in layouts/partials/nav.html)
+  resumeLabel: "View resume"   # no PDF yet; the theme default says "Download PDF"
 
   author:
     name: "Daan Schutte"
@@ -30,5 +32,7 @@ caches:
 
 menu:
   main:
-    - { identifier: posts, name: "Writing", url: "/posts/", weight: 10 }
+    - { identifier: posts, name: "Posts",   url: "/posts/", weight: 10 }
     - { identifier: certs, name: "Certs",   url: "/certs/", weight: 20 }
+    - { identifier: resume, name: "Resume", url: "/resume/", weight: 40 }
+    - { identifier: about,  name: "About",  url: "/about/",  weight: 50 }

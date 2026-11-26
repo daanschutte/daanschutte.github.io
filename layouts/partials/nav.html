@@ -1,0 +1,46 @@
+{{- $brand := .Site.Params.brand | default (replaceRE "^https?://" "" (trim .Site.BaseURL "/")) -}}
+<nav class="nav">
+  {{- /* Site override of the theme's nav: the brand gets a house icon, drawn in
+         the same style as the theme's social icons. Everything else is unchanged. */}}
+  <a class="nav__brand" href="{{ "" | relURL }}" style="display:inline-flex;align-items:center;gap:.4em">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+         stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+         aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v11h5v-6h4v6h5V9"/></svg>
+    {{- $brand -}}
+  </a>
+
+  {{- range .Site.Menus.main }}
+    {{- $current := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) -}}
+    {{- $mobile := eq (lower .Identifier) "about" -}}
+    <a class="nav__link {{ if not $mobile }}nav__desktop-only{{ end }}"
+       href="{{ .URL | relURL }}"{{ if $current }} aria-current="page"{{ end }}>{{ .Name }}</a>
+  {{- end }}
+
+  {{- /* Language switcher. Only on a multilingual build, and only listing the
+         languages this page actually exists in — offering a link to a page that
+         is not translated sends the reader to a 404 rather than to a
+         translation. Plain links, not a dropdown: with two or three languages a
+         menu is more machinery than the job needs. */ -}}
+  {{- with .Translations }}
+    <span class="nav__langs">
+      {{- range . }}
+        <a class="nav__lang" href="{{ .Permalink }}" lang="{{ .Language.Locale }}"
+           hreflang="{{ .Language.Locale }}">{{ .Language.Label | default .Language.Lang }}</a>
+      {{- end }}
+    </span>
+  {{- end }}
+
+  <button class="nav__icon" type="button" data-nuno-theme-toggle aria-label="{{ i18n "switchColourTheme" }}">
+    <span data-nuno-theme-glyph aria-hidden="true">☾</span>
+  </button>
+
+  {{- /* Desktop: a search pill. Mobile: a round icon. Both open the overlay. */}}
+  <button class="nav__search nav__desktop-only" type="button" data-nuno-search-open>
+    <span aria-hidden="true">⌕</span>
+    <span class="nav__search-fake">{{ i18n "searchPosts" }}</span>
+    <span class="nav__kbd" data-nuno-kbd>⌘K</span>
+  </button>
+  <button class="nav__icon nav__mobile-only" type="button" data-nuno-search-open aria-label="{{ i18n "searchPosts" }}">
+    <span aria-hidden="true">⌕</span>
+  </button>
+</nav>
