@@ -8,6 +8,8 @@ params:
   mainSections: ["posts"]
   DateFormat: "2 January 2006"
   brand: "Home"   # nav wordmark (house icon added in layouts/partials/nav.html)
+  portrait: "images/portrait.jpg"   # assets/images/portrait.jpg
+  certHighlights: ["SAL1"]          # shown on the About page Certs row
   resumeLabel: "View resume"   # no PDF yet; the theme default says "Download PDF"
 
   author:
