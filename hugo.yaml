@@ -28,3 +28,7 @@ caches:
   images:
     dir: :cacheDir/images
 
+menu:
+  main:
+    - { identifier: posts, name: "Writing", url: "/posts/", weight: 10 }
+    - { identifier: certs, name: "Certs",   url: "/certs/", weight: 20 }
