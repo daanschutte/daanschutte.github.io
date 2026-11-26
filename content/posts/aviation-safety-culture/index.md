@@ -1,7 +1,7 @@
 ---
 date: '2026-11-21T14:07:51+01:00'
 draft: false
-title: 'Aviation Safety Culture'
+title: 'What Aviation Safety Taught Me About Security Culture'
 series: ["Aviation Safety <> Cybersecurity"]
 seriesOrder: 1          
 seriesGroup: "Governance"   
